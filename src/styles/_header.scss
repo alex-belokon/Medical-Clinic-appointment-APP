@@ -1,0 +1,24 @@
+  
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dadada;
+    padding: 10px 60px;
+  }
+  
+  #enter,
+  #createVisit {
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    box-shadow: 5px 5px rgb(173, 170, 170);
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-left: 20px;
+    background-color: rgb(143, 213, 218);
+    width: 200px;
+    cursor: pointer;
+  }
