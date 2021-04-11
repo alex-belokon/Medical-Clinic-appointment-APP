@@ -19,8 +19,8 @@
   align-items: center;
   }
   
-  #enter,
-  #createVisit {
+
+  #enter,#createVisit {
     background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF  51%, #2C3E50  100%);
     transform: rotatex(10deg);
     animation: rotateAngle 3s linear infinite;
@@ -40,7 +40,7 @@
     transform-style: preserve-3d;
     background-size: 200% auto;
     box-shadow: 4px -2px 0 rgb(170, 162, 162);
-    transition: 0.4s;
+    transition: 0.5s;
     font-family: $font-stack;
     
 
@@ -63,9 +63,6 @@
         calc(var(--z) * 0px)
       );
     }
-    
-    
-   
   }
   
   @keyframes rotateAngle {
@@ -151,7 +148,11 @@
     }
   }
 
-  #enter,
+  #enter:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
   #createVisit:hover {
       background-position: right center; /* change the direction of the change here */
       color: rgb(255, 255, 255);

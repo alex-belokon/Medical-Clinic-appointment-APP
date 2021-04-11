@@ -79,9 +79,9 @@ a {
   background-size: 200% auto;
   -webkit-box-shadow: 4px -2px 0 #aaa2a2;
           box-shadow: 4px -2px 0 #aaa2a2;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   font-family: "Inconsolata", monospace;
 }
 
@@ -260,7 +260,13 @@ a {
   }
 }
 
-#enter,
+#enter:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: white;
+  text-decoration: none;
+}
+
 #createVisit:hover {
   background-position: right center;
   /* change the direction of the change here */
