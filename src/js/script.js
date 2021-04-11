@@ -9,6 +9,7 @@ if (localStorage.getItem("token") == null) {
   createAutorizationWindow();
 } else {
   createVisitBtn.style.display = 'block';
+	createModalVisit(true);
  
 }
 

@@ -1,4 +1,4 @@
-import clearModalFields from "../utilities/clearModalFields.js";
+// import clearModalFields from "../utilities/clearModalFields.js";
 
 export default class Modal {
     constructor({ id, classes }) {

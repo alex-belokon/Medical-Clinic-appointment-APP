@@ -1,7 +1,7 @@
 import { createVisitBtn, root } from "./constants.js";
 import VisitModal from "../classes/VisitModal.js";
 import createDoctorForm from "./createDoctorForm.js";
-import clearModalFields from "./clearModalFields.js";
+// import clearModalFields from "./clearModalFields.js";
 
 export default function createModalVisit(switcher, id, content) {
   if (switcher) {

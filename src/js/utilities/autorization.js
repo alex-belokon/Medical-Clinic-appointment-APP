@@ -1,4 +1,5 @@
 import { loginBtn, createVisitBtn, root } from "./constants.js";
+import LoginModal from "../classes/LoginModal.js";
 
 
 export function createAutorizationWindow() {
