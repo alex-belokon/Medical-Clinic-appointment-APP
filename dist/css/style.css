@@ -307,11 +307,6 @@ a {
   display: block;
 }
 
-.modal.login .addinfo {
-  display: block;
-  height: 20px;
-}
-
 #register-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,15 +315,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.modal.login {
-  padding: 30px 20px 10px;
+  margin: 0;
 }
 
 .modal.visit {
   position: absolute;
-  left: calc((100vw - 40vw) / 2);
+  left: calc(30% / 2);
   top: 227px;
   margin: 0 auto;
   background-color: rgba(50, 105, 109, 0.8);
@@ -367,7 +359,20 @@ a {
 .inputs.submit {
   border-radius: 8px;
   font-weight: bold;
-  width: 200px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 26px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2C3E50), color-stop(51%, #4CA1AF), to(#2C3E50));
+  background-image: -o-linear-gradient(left, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%);
+  background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%);
+  color: #ff0000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  font-family: "Inconsolata", monospace;
 }
 
 .inputs:focus {
@@ -377,9 +382,10 @@ a {
 
 .inputs.submit:hover {
   cursor: pointer;
-  background-color: #8fd5da;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  background-position: right center;
+  /* change the direction of the change here */
+  color: white;
+  text-decoration: none;
 }
 
 .search {
@@ -406,6 +412,8 @@ a {
 
 .autorization-label {
   margin-top: 10px;
+  margin-left: 145px;
+  width: 200px;
 }
 
 .form-select {

@@ -31,7 +31,7 @@ export default class LoginModal extends Modal {
             id: "login", 
             classes: ["inputs"], 
             placeholder: "", 
-            value: "example.cards@gmail.com"}).render();
+            value: "CRAZY_NURSE@DANIT.COM"}).render();
             // value: ""}).render();
         const labelLogin = this.createElement({
             elem: "label",
@@ -49,7 +49,7 @@ export default class LoginModal extends Modal {
             id: "password", 
             classes: ["inputs"], 
             placeholder: "", 
-            value: "test"}).render();
+            value: "5653235"}).render();
             // value: ""}).render();
         const labelPassword = this.createElement({
             elem: "label",
