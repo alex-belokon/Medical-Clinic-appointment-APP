@@ -296,6 +296,8 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   border: 2px solid rgba(240, 23, 23, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 .addinfo {
@@ -323,10 +325,12 @@ a {
   left: calc(30% / 2);
   top: 227px;
   margin: 0 auto;
-  background-color: rgba(50, 105, 109, 0.8);
+  background: rgba(50, 105, 109, 0.8);
   font-size: 16px;
   font-weight: bold;
   padding-left: 30px;
+  height: 100vh;
+  width: 50%;
 }
 
 .close {
@@ -349,30 +353,32 @@ a {
 .textarea {
   margin: 10px 0;
   padding: 10px;
-  width: 528px;
+  width: 520px;
   font-size: 16px;
   border-radius: 8px;
   font-family: "Inconsolata", monospace;
+  font-weight: 700;
   border: 2px solid #817d7d;
 }
 
 .inputs.submit {
   border-radius: 8px;
-  font-weight: bold;
   width: 250px;
   margin: 0 auto;
   margin-top: 26px;
+  margin-bottom: 30px;
   background-image: -webkit-gradient(linear, left top, right top, from(#2C3E50), color-stop(51%, #4CA1AF), to(#2C3E50));
   background-image: -o-linear-gradient(left, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%);
   background-image: linear-gradient(to right, #2C3E50 0%, #4CA1AF 51%, #2C3E50 100%);
   color: #ff0000;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 5px;
   font-family: "Inconsolata", monospace;
+  outline: none;
 }
 
 .inputs:focus {
@@ -414,6 +420,11 @@ a {
   margin-top: 10px;
   margin-left: 145px;
   width: 200px;
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
 }
 
 .form-select {
