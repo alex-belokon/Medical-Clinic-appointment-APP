@@ -5,21 +5,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DANIT MEDICAL</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css /" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css /" /> -->
   <link rel="stylesheet" href="../dist/css/style.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="page-container">
-  @@include("./_header.html")
-  <main class="work-table" id="main">
-  </main>
+
+  <div class="container">
+      @@include("./_header.html")
+       
+      
+
+      <main class="content" id="content">
+          
+          <p id="empty">No items have been added</p>
+          <ul class="note expandible" id="result">
+              <li>
+                  <button id="deleteCard" class="delete_card" type="button">&times;
+                  </button>
+              </li>
+          </ul>
+          <div id="myModal" class="modal-visit">
+
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    
+                    <span class="close">&times;</span>
+                    <h2>Create Card</h2>
+                
+                </div>
+                
+                <div class="modal-body">
+                    
+                    <label class="container_modal" for="doctor-selector"></label>
+                    
+                    <select class="doctor-selector" name="doctor" id="doctor-selector">
+                        
+                        <option class="selected" value="choose-doctor">Выберите врача</option>
+                        <option class="cardiologist" value="cardiologist">Кардиолог</option>
+                        <option class="dentist" value="dentist">Стоматолог</option>
+                        <option class="therapist" value="therapist">Терапевт</option>
+                    
+                    </select>
+                    
+                    <div class="scroll-content">
+                        
+                        <div id="doctors" class="doctorList">
+                            
+                            <h2 id="therapist" style="display:none"><i class="fas fa-user-md"></i>Терапевт</h2>
+                            <h2 id="cardiologist" style="display:none"><i class="fas fa-user-md"></i>Кардиолог</h2>
+                            <h2 id="dentist" style="display:none"><i class="fas fa-user-md"></i>Стоматолог</h2>
+                            
+                            <form class="card" id="formElem" name="card" action="http://cards.danit.com.ua/cards" method="post">
+                                
+                                <label for="fullName"></label><input id="fullName" name="Full Name" type="text" placeholder="ФИО">
+                                <label for="visitDate"></label><input id="visitDate" name="date" type="text" placeholder="Дата визита">
+                                <label for="title"></label><input id="title" type="text" name="title" placeholder="Цель визита">
+                                <label><textarea name="description" rows="4" cols="48" maxlength="400" placeholder="Оставьте комментарий"></textarea>
+                                </label>
+  
+                                <label for="age"></label><input id="age" style="display:none" type="text" name="Age" placeholder="Возраст">
+                                <label for="pulse"></label><input id="pulse" style="display:none" type="text" name="Pulse" placeholder="Обычное давление">
+                                <label for="weight"></label><input id="weight" style="display:none" type="text" name="Weight" placeholder="Массы тела">
+                                <label><input id="cardio-deceases" type="text" style="display:none" name="Other" placeholder="Перенесенные заболевания"></label>
+                                <label for="lastDate"></label><input id="lastDate" name="date" type="text" placeholder="Дата последнего визита">
+                            
+                            </form>
+                        
+                        </div>
+                        
+                        <button id="createCard" type="submit" value="Submit" class="modal-footer">
+                            Create Card
+                        </button>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+
+      
+
+  </div>
   @@include("./_footer.html")
 
-  <script src="./dist/js/script.js" type="module"></script>
-
+<script src="../dist/js/classes/index1.js"></script>
+<script src="../dist/js/classes/visit.js"></script>
+<!-- <script src="../dist/js/classes/test.js"></script> -->
+<script type="module" src="../dist/js/script.js"></script>
 </body>
 
 </html>
