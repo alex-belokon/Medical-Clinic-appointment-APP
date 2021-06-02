@@ -1,6 +1,8 @@
 import { loginBtn, createVisitBtn, root } from "./constants.js";
 import LoginModal from "../classes/LoginModal.js";
-
+import createSearchForm from "./createSearchForm.js";
+import createCardsForm from "./createCardsForm.js";
+import createModalVisit from "./creatvisit.js";
 
 export function createAutorizationWindow() {
 	const loginForm = new LoginModal ({
@@ -45,7 +47,6 @@ function signIn(event) {
 		} else {
 			span.textContent = 'Incorrect username or password';
 			span.style.color = "red";
-			// span.style.marginBottom = "10px";
 			flag = false;
 		}
 		if (!flag) {

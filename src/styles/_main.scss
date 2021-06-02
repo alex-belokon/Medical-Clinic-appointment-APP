@@ -1,34 +1,13 @@
-header{
-  background-color: rgb(218, 218, 218);
-}
-
-main{
-  background: url(../../dist/img/bg1.webp);
+.work-table {
+    background: url(../../dist/img/bg1.webp);
     background-color: #a1e5ee;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     min-height: 1200px;
-}
-#empty{
-  position: absolute;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-size: large;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: black;
-}
-.content {
-    margin: 0 100px;
-    border: 2px dashed #369dff ;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 95vh;
   }
   
-  #content {
+  #main {
     position: relative;
   }
   
@@ -65,7 +44,7 @@ main{
   
   .modal.visit {
     position: absolute;
-    left: calc(30% / 2);
+    left: calc(60% / 2);
     top: 227px;
     margin: 0 auto;
     background: rgba(50, 105, 109, 0.8);
@@ -73,7 +52,7 @@ main{
     font-weight: bold;
     padding-left: 30px;
     height: 100vh;
-    width: 50%;
+    width: 34%;
   }
   
   .close {
@@ -167,270 +146,88 @@ main{
     border-radius: 8px;
   }
   
-  // .cardelem {
-  //   display: none;
-  // }
-  
-  // .cardelem.defaultactive {
-  //   display: block;
-  // }
-  
-  // .cardelem.active {
-  //   display: block;
-  // }
-  
-  // .card-btn-wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 100%;
-  //   align-items: center;
-  //   position: absolute;
-  //   bottom: 10px;
-  //   left: 0;
-  // }
-  
-  // .cards-btn--additional-wrapper {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   opacity: 0;
-  //   transition: opacity 1.5s;
-  //   position: absolute;
-  //   bottom: 128.5px;
-  //   left: 0;
-  //   width: 100%;
-  // }
-  
-  // .cards-btn--additional-wrapper.active {
-  //   opacity: 1;
-  // }
-  
-  // .edit {
-  //   width: 89.5px;
-  // }
-  
-  // .cards-btn, 
-  // .editBtns {
-  //   background-color: rgb(143, 213, 218);
-  //   border: 2px solid #817d7d;
-  //   border-radius: 5px;
-  //   padding: 5px 8px;
-  //   width: 85%;
-  // }
-  
-  // .cards-btn {
-  //   margin-bottom: 10px;
-  
-  //   &:hover {
-  //     color: rgb(102, 117, 13);
-  //   }
-  // }
-  
-  // .editBtns {
-  //   background-color: rgb(218, 250, 252);
-  
-  //   &:hover {
-  //     color: rgb(73, 158, 34);
-  //   }
-  // }
-  
-  // .card-wrapper {
-  //   width: 300px;
-  //   padding: 15px;
-  //   border: 2px solid #817d7d;
-  //   border-radius: 5px;
-  //   background-color: rgba(204, 247, 247, 0.7);
-  //   position: relative;
-  //   padding-bottom: 200px;
-  
-  //   &:hover {
-  //     background-color: rgba(50, 105, 109, 0.7);
-  //     transition: background-color 0.5s;
-  //   }
-  // }
-  
-  // .card-wrapper.selected {
-  //   opacity: 0.5;
-  // }
-
-  .modal-visit {
+  .cardelem {
     display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 200px;
-    left: 38%;
-    top: 0;
-    width: 400px;
-    height: 400px;
-}
-
-/* Modal Content */
-.modal-content {
+  }
+  
+  .cardelem.defaultactive {
+    display: block;
+  }
+  
+  .cardelem.active {
+    display: block;
+  }
+  
+  .card-btn-wrapper {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    position: relative;
-    background-color: #ffffff;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.5s;
-    animation-name: animatetop;
-    animation-duration: 0.5s;
-}
-.container_modal {
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+  
+  .cards-btn--additional-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-}
-.scroll-content{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.doctorList{
-    display: none;
-    margin: 0 auto;
-}
-
-.doctorList h2 {
-    display: flex;
-    color: #369dff;
-    width: 20%;
-    margin: 0 auto 20px;
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-200px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-200px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #3a99ff;
-    color: white;
-}
-
-.modal-body {
-    padding: 2px 16px;
-}
-
-.modal-footer {
-    left: 30%;
-    width: 154px;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
-    background-color: #369dff;
-    color: #ffff;
-    cursor: pointer;
-}
-
-.modal-footer:hover {
-    width: 154px;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    background-color: #369dff;
-    color: #ffff;
-    cursor: pointer;
-}
-
-#doctors {
-    font-size: 20px;
-}
-/*card*/
-.note {
-    display: none;
-    flex-direction: column;
-    background-color: #4E79BA;
-    border: 1px solid #000000;
-    width: 224px;
-    height: 254px;
-}
-.note .delete_card {
-    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 1.5s;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 14%;
-    height: 14%;
-    cursor: pointer;
-    background-color: #df2134;
-}
-
-.note .delete_card:hover {
-    border: 3px solid #000000;
-
-}
-
-.note p {
-    font-size: 14px;
-}
-
-pre {
-    white-space: pre-wrap;
-}
-
-.card_block{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    padding: 10%;
-    height: 92%;
-}
-
-#doctorCard{
-    background-color: #df2134;
-    height: 11%;
-}
-.showmore {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.dentist {
-    flex-direction: column;
-    background-color: #4E79BA;
-    border: 1px solid #000000;
-    width: 150px;
-    height: 250px;
-}
-
-.therapist {
-    flex-direction: column;
-    background-color: #4E79BA;
-    border: 1px solid #000000;
-    width: 150px;
-    height: 250px;
-}
-
-.cardiologist {
-    flex-direction: column;
-    background-color: #4E79BA;
-    border: 1px solid #000000;
-    width: 150px;
-    height: 250px;
-}
+    bottom: 128.5px;
+    left: 0;
+    width: 100%;
+  }
+  
+  .cards-btn--additional-wrapper.active {
+    opacity: 1;
+  }
+  
+  .edit {
+    width: 89.5px;
+  }
+  
+  .cards-btn, 
+  .editBtns {
+    background-color: rgb(143, 213, 218);
+    border: 2px solid #817d7d;
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: 85%;
+  }
+  
+  .cards-btn {
+    margin-bottom: 10px;
+  
+    &:hover {
+      color: rgb(102, 117, 13);
+    }
+  }
+  
+  .editBtns {
+    background-color: rgb(218, 250, 252);
+  
+    &:hover {
+      color: rgb(73, 158, 34);
+    }
+  }
+  
+  .card-wrapper {
+    width: 300px;
+    padding: 15px;
+    border: 2px solid #817d7d;
+    border-radius: 5px;
+    background-color: rgba(204, 247, 247, 0.7);
+    position: relative;
+    padding-bottom: 200px;
+  
+    &:hover {
+      background-color: rgba(50, 105, 109, 0.7);
+      transition: background-color 0.5s;
+    }
+  }
+  
+  .card-wrapper.selected {
+    opacity: 0.5;
+  }

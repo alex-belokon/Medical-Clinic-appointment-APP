@@ -1,7 +1,7 @@
 import { createVisitBtn, root } from "./constants.js";
 import VisitModal from "../classes/VisitModal.js";
 import createDoctorForm from "./createDoctorForm.js";
-// import clearModalFields from "./clearModalFields.js";
+import clearModalFields from "./clearModalFields.js";
 
 export default function createModalVisit(switcher, id, content) {
   if (switcher) {
@@ -18,7 +18,6 @@ export default function createModalVisit(switcher, id, content) {
       const selectForm = document.querySelector("#visit-form");
       selectForm.style.display = "block";
       const select = document.querySelector(".form-select");
-      // visitModal.scrollIntoView();
     
       select.addEventListener("change", () => {
         let index = select.options.selectedIndex;
