@@ -1,20 +1,20 @@
-Приложение выполнено в виде страницы для медицинского центра как инструмент администратора для создания карточек, описывающих запланированные визиты к врачу.
+The application is in the form of a page for the medical center as a tool for the administrator to create cards describing the planned visits to the doctor.
 
-Проект выполнен студентом группы FE-24 Белоконь Александром.
+The project was carried out by the student of the group FE-24 Belokon Alexander.
 
-Стуктура страницы состоит из 3 частей:
+The page consists of 3 parts:
 
-Header (шапка) страницы: логотип и кнопка "Вход". После успешной авторизации она меняется на кнопку "Создать визит". По клику на кнопку "Создать визит" появляется модальное окно, в котором можно создать новую карточку.
-Основная часть: форма для фильтрации визитов и список созданных визитов. При первом посещении, а также при удалении всех карточек на доске запись "No items have been added". Модальное окно Создать визит В модальном окне присутствует выпадающий список (select) с выбором врача. В зависимости от выбранного врача под этим выпадающим списком появляются поля, которые нужно дозаполнить для визита к этому врачу. В выпадающем списке должно три опции - Кардиолог, Стоматолог, Терапевт. Далее необходимо нажать кнопку Создать. При клике на кнопку отправляется AJAX-запрос на соответствующий роут, и если в ответе пришла информация о новосозданной карточке - создается карточка в Доске визитов на странице и модальное окно закрывается. Кнопка Закрыть- закрывает модальное окно без сохранения информации и создания карточки. Все поля ввода, независимо от выбранной опции, кроме поля для дополнительных комментариев - обязательны для ввода данных. При успешном создании появляется карточка, в ней есть: ФИО, которые были введены при создании карточки. Врач, к которому человек записан на прием. Кнопка Показать больше. По клику на нее карточка расширяется, и появляется остальная информация, которая была введена при создании визита. Кнопка Редактировать - при нажатии на нее, появляется выпадающий список что можно сделать с карточкой: Редактировать - вместо текстового содержимого карточки появляются форма, где можно отредактировать введенные поля. Такая же, как в модальном окне при создании карточки. Удалить - карточка удаляется. При нажатии на Search осуществляется поиск и фильтрация карточек по заданным критериям поиска.
+Header (cap) of the page: logo and button "Login". After successful authorization it changes to button "Create visit". Click on the "Create Visit" button and a modal window appears where you can create a new card.
+Main part: a form for filtering visits and a list of established visits. At the first visit, as well as when deleting all cards on the board, write "No items have been added". Modal window Create a visit In the modal window there is a drop-down list (select) with the choice of doctor. Depending on the chosen doctor under this drop-down list there are fields that need to be filled up for a visit to this doctor. There should be three options in the drop-down list - Cardiologist, Dentist, Therapist. Next you need to click Create. When clicking on the button, an AJAX-request is sent to the appropriate router, and if the answer came information about the newly created card - a card is created in the Board of visits on the page and the modal window closes. The Close button closes the modal window without saving the information and creating a card. All input fields, regardless of the selected option, except for the additional comment field, are required for data entry. When successfully created, the card appears, it has: name, which were entered at the creation of the card. The doctor, to whom the person is registered for an appointment. The Show More button. Click on it expands the card, and the rest of the information that was introduced when you created the visit appears. Edit button - when you click on it, a drop-down list of what you can do with the card appears: Edit - instead of the card’s text content, a form appears where you can edit the fields you enter. Same as in the modal window when you create a card. Remove - the card is removed. When you click on Search, you search and filter cards according to the specified search criteria.
 Footer.
-Для того, чтобы запустить сборку проекта необходимо в терминале ввести команду npm i, далее запустить gulp, прописав соответствующую команду gulp.
+To start a project assembly, you must enter the npm i command in the terminal, then run gulp, and specify the gulp command.
 
-Список использованных технологий:
+List of technologies used:
 
 HTML, SCSS,
 Javascript
-Для создания классов использовался ES6 синтаксис.
-Для выполнения AJAX-запросов - fetch.
-Проект разделен на модули с помощью ES6 modules.
-Для сборки проект Node.js
+ES6 syntax was used to create classes.
+For AJAX queries - fetch.
+The project is divided into modules using ES6 modules.
+To build the Node.js project
 Github
